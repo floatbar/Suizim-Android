@@ -39,7 +39,6 @@ public class Password3AdminActivity extends AppCompatActivity {
         staffInterface = ApiUtilsStaff.getNodejsStaffInterface();
 
         editPassword3 = findViewById(R.id.editPassword3);
-
         TextView tvPassword3 = findViewById(R.id.tvPassword3);
 
         tvPassword3.setText(getString(R.string.devam_ederek_kullan_m_ko_ullar_m_z_ve) + getString(R.string.gizlilik_politikam_z_onaylam_say_l_rs_n_z));
