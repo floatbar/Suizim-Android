@@ -1,0 +1,47 @@
+package wafoot.becoming.wafoot;
+
+import android.app.Activity;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
+/*
+ * There is a better performance and a less delay with my custom JSON-formatted UDP protocol, which I have been written in C language.
+ * This is one of the reasons why Suizim (also called WaFoot) utilizes UDP for instant messaging.
+ * Do not forget to use TCP protocol instead of UDP in your projects if you really give importance to security rather than performance ;)
+*/
+
+public class UDPClient {
+
+    private final Activity activity;
+
+    public UDPClient(final Activity activity) {
+        this.activity = activity;
+    }
+
+    protected void sendUDPDataPacket() {
+        try (DatagramSocket socket = new DatagramSocket()) {
+            InetAddress ipAddress = InetAddress.getByName(activity.getString(R.string.udp_server_ip_address));
+            int PORT = Integer.parseInt(activity.getString(R.string.udp_server_port));
+
+            String message = "Hello Universe!";
+            byte[] sendData = message.getBytes();
+
+            DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, ipAddress, PORT);
+            socket.send(sendPacket);
+            System.out.println("Message sent successfully!");
+
+            byte[] receiveData = new byte[1024];
+            DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+            socket.receive(receivePacket);
+            String receivedMessage = new String(receivePacket.getData(), 0, receivePacket.getLength());
+
+            System.out.println("Message received from UDP server: " + receivedMessage);
+        }
+
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
