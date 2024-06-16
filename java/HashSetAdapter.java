@@ -29,7 +29,6 @@ public class HashSetAdapter extends ArrayAdapter<String> {
 
     @Override
     public String getItem(int position) {
-
         List<String> list = new ArrayList<>(dataSet);
         return list.get(position);
     }
@@ -39,24 +38,21 @@ public class HashSetAdapter extends ArrayAdapter<String> {
         ViewHolder viewHolder;
 
         if (convertView == null) {
-
             LayoutInflater inflater = LayoutInflater.from(mContext);
-
             convertView = inflater.inflate(R.layout.messages, parent, false);
-
+            
             viewHolder = new ViewHolder();
-
             viewHolder.textViewItem = convertView.findViewById(R.id.tvMessage);
 
             convertView.setTag(viewHolder);
 
-        } else {
-
+        }
+        
+        else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
         String item = getItem(position);
-
         viewHolder.textViewItem.setText(item);
 
         return convertView;
