@@ -24,6 +24,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class Create2AccountTeacherActivity extends AppCompatActivity {
+    
     private ShapeableImageView ivAccount;
     private FloatingActionButton fabAccount;
     private TextInputEditText editAccount2;
