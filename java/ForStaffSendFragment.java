@@ -26,6 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class ForStaffSendFragment extends Fragment {
+    
     private ProgressBar pBar10;
     private TextInputEditText editSend4, editSend5, editSend6;
     private FloatingActionButton fabSend3;
