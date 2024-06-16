@@ -104,8 +104,7 @@ public class Password5Student5Activity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                else if (editPassword.getText().toString().equals(editConfirm.getText().toString()) && editPassword.getText().toString()
-                        .length() < 8) {
+                else if (editPassword.getText().toString().equals(editConfirm.getText().toString()) && editPassword.getText().toString().length() < 8) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Password5Student5Activity.this);
                     alertDialogBuilder.setIcon(R.drawable.baseline_error);
                     alertDialogBuilder.setTitle(R.string.ifre_basamak_say_s_sorunu44);
@@ -119,8 +118,7 @@ public class Password5Student5Activity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                else if (editPassword.getText().toString().equals(editConfirm.getText().toString()) &&
-                        editPassword.getText().toString().length() >= 8) {
+                else if (editPassword.getText().toString().equals(editConfirm.getText().toString()) && editPassword.getText().toString().length() >= 8) {
                     progressBar.setVisibility(View.VISIBLE);
 
                     String student_class = getIntent().getStringExtra("student_class");
