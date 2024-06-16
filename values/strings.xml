@@ -11,7 +11,7 @@
     <string name="menu_slideshow">Menu Slideshow</string>
     <string name="copy_message">Mesajı kopyala</string>
     <string name="copied_message">Kopyalanan mesaj</string>
-    <string name="udp_server_ip_address">185.255.95.248</string>
+    <string name="udp_server_ip_address">127.0.0.1</string>
     <string name="udp_server_port">8888</string>
     <string name="yetersiz_bilgiler">Yetersiz Bilgiler</string>
     <string name="heatmaply_i_lemi_i_in_t_m_alanlar_doldurunuz">Heatmaply işlemi için tüm alanları doldurunuz.</string>
