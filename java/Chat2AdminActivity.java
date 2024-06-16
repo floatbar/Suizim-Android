@@ -22,6 +22,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.navigation.NavigationView;
 
 public class Chat2AdminActivity extends AppCompatActivity {
+    
     private DrawerLayout drawer;
 
     @Override
