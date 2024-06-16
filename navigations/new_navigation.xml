@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_navigation"
+    app:startDestination="@id/inboxFragment2">
+
+    <fragment
+        android:id="@+id/inboxFragment2"
+        android:name="wafoot.becoming.wafoot.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/outboxFragment2"
+        android:name="wafoot.becoming.wafoot.OutboxFragment"
+        android:label="fragment_outbox"
+        tools:layout="@layout/fragment_outbox" />
+    <fragment
+        android:id="@+id/send2Teacher2Fragment"
+        android:name="wafoot.becoming.wafoot.Send2Teacher2Fragment"
+        android:label="fragment_send2_teacher2"
+        tools:layout="@layout/fragment_send2_teacher2" />
+</navigation>

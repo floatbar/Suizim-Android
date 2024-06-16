@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_fragment"
+    app:startDestination="@id/inboxFragment">
+
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="wafoot.becoming.wafoot.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/outboxFragment"
+        android:name="wafoot.becoming.wafoot.OutboxFragment"
+        android:label="fragment_outbox"
+        tools:layout="@layout/fragment_outbox" />
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="wafoot.becoming.wafoot.SendFragment"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="wafoot.becoming.wafoot.ReplyFragment"
+        android:label="fragment_reply"
+        tools:layout="@layout/fragment_reply" />
+</navigation>
