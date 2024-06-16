@@ -15,7 +15,7 @@ import java.net.InetAddress;
 // The UDP server is ready and running at the moment.
 // However, for the server's security, unfortunately, Suizim's UDP server isn't used only for now.
 // Instead, Firebase is now being used for message operations.
-// Even so, do not worry. Soon, I will delete my Firebase database, and will replace Firebase with my UDP server for message operations within the app.
+// Even so, do not worry at all! Soon, I will delete my Firebase database, and will replace Firebase with my UDP server for message operations within the app.
 // Do not forget that UDP (User Datagram Protocol) transfers data much faster than other protocols :-)
 
 public class UDPClient {
