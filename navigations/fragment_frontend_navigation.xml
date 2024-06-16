@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_frontend_navigation"
+    app:startDestination="@id/calculationFragment">
+
+    <fragment
+        android:id="@+id/calculationFragment"
+        android:name="wafoot.becoming.wafoot.CalculationFragment"
+        android:label="CalculationFragment" />
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="wafoot.becoming.wafoot.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="wafoot.becoming.wafoot.ChatRoomFragment"
+        android:label="fragment_chat_room"
+        tools:layout="@layout/fragment_chat_room" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="wafoot.becoming.wafoot.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/footPrintResultFragment"
+        android:name="wafoot.becoming.wafoot.FootPrintResultFragment"
+        android:label="fragment_foot_print_result"
+        tools:layout="@layout/fragment_foot_print_result" />
+    <fragment
+        android:id="@+id/TOSFragment"
+        android:name="wafoot.becoming.wafoot.TOSFragment"
+        android:label="fragment_t_o_s"
+        tools:layout="@layout/fragment_t_o_s" />
+    <fragment
+        android:id="@+id/deleteAccountFragment"
+        android:name="wafoot.becoming.wafoot.DeleteAccountFragment"
+        android:label="fragment_delete_account"
+        tools:layout="@layout/fragment_delete_account" />
+    <fragment
+        android:id="@+id/twoFactorAuthenticationFragment"
+        android:name="wafoot.becoming.wafoot.TwoFactorAuthenticationFragment"
+        android:label="TwoFactorAuthenticationFragment" />
+</navigation>
