@@ -12,7 +12,8 @@ import java.net.InetAddress;
  * Do not forget to use TCP protocol instead of UDP in your projects if you really give importance to security rather than performance ;)
 */
 
-// For the server's security, unfortunately, Suizim's UDP server is ready and running now, but isn't used only for now.
+// The UDP server is ready and running at the moment.
+// However, for the server's security, unfortunately, Suizim's UDP server isn't used only for now.
 // Instead, Firebase is now being used for message operations.
 // Even so, do not worry. Soon, I will delete my Firebase database, and will replace Firebase with UDP for message operations within the app.
 
