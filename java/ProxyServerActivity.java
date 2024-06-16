@@ -18,6 +18,7 @@ import java.net.Proxy;
 import java.net.Socket;
 
 public class ProxyServerActivity extends AppCompatActivity {
+
     private TextInputEditText eProxy1;
     private TextInputEditText eProxy2;
     private TextInputEditText eProxy3;
@@ -92,7 +93,7 @@ public class ProxyServerActivity extends AppCompatActivity {
                             socket = new Socket(proxy);
 
                             try {
-                                socket.connect(new InetSocketAddress(eProxy2.getText().toString().trim(), Integer.parseInt(eProxy3.getText().toString())));
+                                socket.connect(new InetSocketAddress(eProxy2.getText().toString().trim(), Integer.parseInt(eProxy2.getText().toString())));
                                 Toast.makeText(ProxyServerActivity.this, getString(R.string.proxy_sunucusuna_ba_ar_l_bir_ekilde_ba_lan_ld), Toast.LENGTH_SHORT).show();
                             }
 
