@@ -7,7 +7,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 /*
- * There is a better performance and a less delay with my custom JSON-formatted UDP protocol, which I have been written in C language.
+ * There is a better performance and a less delay with my custom JSON-formatted UDP protocol, which have been written in C language.
  * This is one of the reasons why Suizim (also called WaFoot) utilizes UDP for instant messaging.
  * Do not forget to use TCP protocol instead of UDP in your projects if you really give importance to security rather than performance ;)
 */
