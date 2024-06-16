@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.WaFoot" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorHint">@color/siyahimsi2</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="Theme.WaFoot" parent="Base.Theme.WaFoot" />
+
+    <style name="customToolbarTitleTextAppearance">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.WaFoot.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CircleImageViewTheme">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">48dp</item>
+    </style>
+
+    <style name="CircleImageViewThemeForLandscapeOrientation">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">34dp</item>
+    </style>
+
+    <style name="Theme.WaFoot.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WaFoot.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
