@@ -22,6 +22,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.navigation.NavigationView;
 
 public class ForStaffActivity extends AppCompatActivity {
+    
     private DrawerLayout drawer;
     private Toolbar tbar7;
     private NavHostFragment nh7;
