@@ -8,7 +8,7 @@ public class ConnectionManager {
     protected static boolean checkConnection() {
         try {
             Socket socket = new Socket();
-            socket.connect(new InetSocketAddress("80.208.221.32", 6666), 4000);
+            socket.connect(new InetSocketAddress("0.0.0.0", 6666), 4000); // Replace with your server credentials.
             socket.close();
             return true;
         }
