@@ -5,7 +5,9 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+
 public interface TeachersInterface {
+    
     @FormUrlEncoded
     @POST("/insertTeacherGender")
     Call<TeachersResponse> insertTeacherGender(@Field("teacher_name") String teacher_name, @Field("teacher_surname") String teacher_surname,
