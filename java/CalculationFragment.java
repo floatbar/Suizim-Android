@@ -35,6 +35,7 @@ public class CalculationFragment extends Fragment {
         fab1 = view.findViewById(R.id.fab1);
         edit1 = view.findViewById(R.id.edit1);
         edit2 = view.findViewById(R.id.edit2);
+        
         edit1.setMovementMethod(null);
 
         edit1.setOnClickListener(new View.OnClickListener() {
