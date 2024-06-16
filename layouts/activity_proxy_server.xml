@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginBottom="3dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,22 +22,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Proxy Sunucu Konfigürasyonu"
-        android:textSize="19dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21.5dp"
+        android:layout_marginTop="19.8dp"
         android:text="Proxy vekil sunucusu için bağlantı ayarları"
-        android:textSize="18dp"
+        android:textSize="17.3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,8 +45,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout16"
-        android:layout_width="315dp"
-        android:layout_height="50.3dp"
+        android:layout_width="550dp"
+        android:layout_height="49.5dp"
         app:boxCornerRadiusBottomEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
         app:endIconMode="clear_text"
@@ -57,13 +57,14 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:layout_constraintVertical_bias="0.298">
+        app:layout_constraintVertical_bias="0.308">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/eProxy1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="IPv4 adresi"
+            android:imeOptions="flagNoExtractUi"
             android:lines="1"
             android:maxLines="1"
             android:paddingTop="10dp"
@@ -74,9 +75,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout19"
-        android:layout_width="315dp"
-        android:layout_height="50.3dp"
-        android:layout_marginTop="18dp"
+        android:layout_width="550dp"
+        android:layout_height="49.5dp"
+        android:layout_marginTop="12dp"
         app:endIconMode="clear_text"
         app:boxCornerRadiusBottomEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
@@ -91,7 +92,8 @@
             android:id="@+id/eProxy2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Port değeri"
+            android:hint="Port noktası"
+            android:imeOptions="flagNoExtractUi"
             android:inputType="number"
             android:lines="1"
             android:maxLines="1"
@@ -107,20 +109,20 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         app:backgroundTint="@color/orange"
-        app:fabCustomSize="51.7dp"
+        app:fabCustomSize="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout19"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812"
+        app:layout_constraintVertical_bias="0.9395"
         app:srcCompat="@drawable/forward"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="315dp"
-        android:layout_height="50.3dp"
-        android:layout_marginBottom="17.3dp"
+        android:layout_width="550dp"
+        android:layout_height="49.5dp"
+        android:layout_marginBottom="12dp"
         android:layoutDirection="rtl"
         android:textDirection="ltr"
         app:boxCornerRadiusBottomEnd="8dp"
@@ -131,8 +133,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:layout_constraintVertical_bias="0.979"
         app:startIconDrawable="@drawable/arrow_down">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -142,7 +142,8 @@
             android:cursorVisible="false"
             android:focusable="false"
             android:focusableInTouchMode="false"
-            android:hint="Protokol"
+            android:hint="Ağ protokolü"
+            android:imeOptions="flagNoExtractUi"
             android:lines="1"
             android:maxLines="1"
             android:paddingTop="10dp"
@@ -152,14 +153,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:text="Proxy sunucusu, tıpkı VPN gibi bağlantı\n                kalitenizi düşürebilir."
         android:textSize="16.3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
