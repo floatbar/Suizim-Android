@@ -452,7 +452,6 @@ public class FourthQuestionActivity extends AppCompatActivity {
                                                 }
 
                                                 else if (washingmethod.equals(getString(R.string.ama_r_makinesi)) && dishmethod.equals(getString(R.string.elde_y_kama))) {
-
                                                     result = showerAmount * showeramount + frontWashingAmount * frontwashing
                                                             + washingamount * washingAmount + handDishAmount * dishamount * familyamount + dishAmount * dishamount
                                                             + kitchenamount * kitchenAmount + Double.parseDouble(question1.getText().toString()) * vehicleAmount + Double.parseDouble(question2.getText().toString()) * kitchenOutcome
