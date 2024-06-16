@@ -94,7 +94,6 @@ public class Password3AdminActivity extends AppCompatActivity {
                             if (response.isSuccessful()) {
                                 Intent intent = new Intent(Password3AdminActivity.this, FrontendActivity1.class);
                                 startActivity(intent);
-
                             }
                         }
 
