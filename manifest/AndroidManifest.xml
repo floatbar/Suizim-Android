@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wafoot.becoming.wafoot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/main_logo_round"
+        android:label="Suizim"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/main_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WaFoot"
+        tools:targetApi="31">
+        <activity
+            android:name=".TwoFactorAuthenticationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsOfServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Reply4Staff4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Reply2ForStudents2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ForStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Send3Teacher3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".User2Messages2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Contact3Teacher3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat3ForAdmin3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ProxyServerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Individual4Based4Admin4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Password5Student5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Student5ForTeacher5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Individual3BasedAdmin3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Individual2BasedTeacher2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".IndividualBasedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SchoolBasedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassBasedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Verification3AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Verification2TeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Result3ScreenAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Result2ScreenTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FourthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat2AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login3AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login2TeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Password4ActivityStaff"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Password3AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Password2TeacherActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Create1AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Create2AccountTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectBranchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FrontendActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
