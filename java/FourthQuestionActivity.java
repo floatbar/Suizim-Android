@@ -114,7 +114,6 @@ public class FourthQuestionActivity extends AppCompatActivity {
                 }
 
                 else {
-
                     SharedPreferences sharedPreferences = getSharedPreferences("GeneralQuestion",
                             Context.MODE_PRIVATE);
                     String position = sharedPreferences.getString("position", "");
