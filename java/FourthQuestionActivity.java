@@ -20,6 +20,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class FourthQuestionActivity extends AppCompatActivity {
+
     private TextInputEditText question1;
     private TextInputEditText question2;
     private TextInputEditText question3;
@@ -153,7 +154,6 @@ public class FourthQuestionActivity extends AppCompatActivity {
                                                                 + washingamount * washingAmount + frontdish * frontDishAmount + dishAmount * dishamount
                                                                 + kitchenamount * kitchenAmount + Double.parseDouble(question1.getText().toString()) * vehicleAmount + Double.parseDouble(question2.getText().toString()) * kitchenOutcome
                                                                 + Double.parseDouble(question3.getText().toString()) * clotheOutcome) + frontdish * prerinsingAmount;
-
                                                     }
 
                                                     if (prerinsingState.equals(getString(R.string.makineye_atmadan_nce_ge_irmem))) {
