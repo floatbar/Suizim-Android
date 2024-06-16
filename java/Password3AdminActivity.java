@@ -70,8 +70,7 @@ public class Password3AdminActivity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                else if (editPassword3.getText().toString().equals(editConfirm3.getText().toString()) && editPassword3.getText().toString()
-                        .length() < 8) {
+                else if (editPassword3.getText().toString().equals(editConfirm3.getText().toString()) && editPassword3.getText().toString().length() < 8) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Password3AdminActivity.this);
                     alertDialogBuilder.setIcon(R.drawable.check_circle);
                     alertDialogBuilder.setTitle(R.string.ifre_basamak_say_s_sorunu3);
@@ -85,8 +84,7 @@ public class Password3AdminActivity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                else if (editPassword3.getText().toString().equals(editConfirm3.getText().toString()) &&
-                        editPassword3.getText().toString().length() >= 8) {
+                else if (editPassword3.getText().toString().equals(editConfirm3.getText().toString()) && editPassword3.getText().toString().length() >= 8) {
                     String staff_name = getIntent().getStringExtra("staff_name");
                     String staff_surname = getIntent().getStringExtra("staff_surname");
 
