@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/hicbirzaman"
+        android:title="Hiçbir zaman" />
+    <item
+        android:id="@+id/w1"
+        android:title="Haftada 1" />
+    <item
+        android:id="@+id/w2"
+        android:title="Haftada 2" />
+    <item
+        android:id="@+id/w3"
+        android:title="Haftada 3" />
+    <item
+        android:id="@+id/w4"
+        android:title="Haftada 4" />
+    <item
+        android:id="@+id/w5"
+        android:title="Haftada 5" />
+    <item
+        android:id="@+id/w6"
+        android:title="Haftada 6" />
+    <item
+        android:id="@+id/w7"
+        android:title="Haftada 7" />
+    <item
+        android:id="@+id/w8"
+        android:title="Haftada 8+" />
+</menu>

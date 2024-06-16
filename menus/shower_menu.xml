@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="1" />
+    <item
+        android:id="@+id/iki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="2" />
+    <item
+        android:id="@+id/uc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="3" />
+    <item
+        android:id="@+id/dort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="4" />
+    <item
+        android:id="@+id/bes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="5" />
+    <item
+        android:id="@+id/alti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="6" />
+    <item
+        android:id="@+id/yedi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="7" />
+    <item
+        android:id="@+id/sekiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="8" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="9" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="10" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="11" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="12" />
+
+</menu>

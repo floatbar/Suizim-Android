@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inboxFragment"
+        android:icon="@drawable/baseline_inbox"
+        android:title="Gelen kutusu" />
+    <item
+        android:id="@+id/outboxFragment"
+        android:icon="@drawable/send"
+        android:title="Giden kutusu" />
+</menu>

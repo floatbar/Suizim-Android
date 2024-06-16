@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Aracım yok" />
+    <item
+        android:id="@+id/ra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="1 kere" />
+    <item
+        android:id="@+id/ra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="2 kere" />
+    <item
+        android:id="@+id/ra4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="3 kere" />
+    <item
+        android:id="@+id/ra5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="4 kere" />
+    <item
+        android:id="@+id/ra6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="5 kere" />
+    <item
+        android:id="@+id/ra7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="6 kere" />
+    <item
+        android:id="@+id/ra8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="7 kere" />
+    <item
+        android:id="@+id/ra9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="8+ kere" />
+</menu>

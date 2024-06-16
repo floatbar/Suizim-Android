@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="0-10 dk" />
+    <item
+        android:id="@+id/dk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="10-20 dk" />
+    <item
+        android:id="@+id/dk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="20-30 dk" />
+    <item
+        android:id="@+id/dk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="30+ dk" />
+</menu>

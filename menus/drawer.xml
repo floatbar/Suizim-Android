@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:id="@+id/g1">
+
+                <item
+                    android:id="@+id/calculationFragment"
+                    android:icon="@drawable/water_drop"
+                    android:title="Toplam hesaplama" />
+
+                <item
+                    android:id="@+id/footPrintResultFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/calculation_black"
+                    android:title="Hesaplama sonucu" />
+                <item
+                    android:id="@+id/chatRoomFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/contact_support"
+                    android:title="İletişim &amp; destek" />
+                <item
+                    android:id="@+id/TOSFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/agreement"
+                    android:title="KVKK sözleşmesi" />
+                <item
+                    android:id="@+id/infoFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/info"
+                    android:title="Uygulama bilgileri" />
+        </group>
+        <group
+            android:id="@+id/g2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <item
+                    android:id="@+id/twoFactorAuthenticationFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/baseline_security_black"
+                    android:title="İki faktörlü şifre" />
+                <item
+                    android:id="@+id/logoutFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/logout"
+                    android:title="Çıkış yap" />
+                <item
+                    android:id="@+id/deleteAccountFragment"
+                    android:icon="@drawable/delete"
+                    android:title="Hesabı sil" />
+        </group>
+
+</menu>

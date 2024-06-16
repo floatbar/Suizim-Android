@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ran1"
+        android:title="11-14" />
+    <item
+        android:id="@+id/ran2"
+        android:title="15-18" />
+    <item
+        android:id="@+id/ran3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="19+" />
+</menu>
