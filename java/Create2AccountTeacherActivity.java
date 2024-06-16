@@ -74,13 +74,11 @@ public class Create2AccountTeacherActivity extends AppCompatActivity {
         fabAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (editAccount.getText().toString().trim().equals("") || editAccount2.getText().toString().trim().equals("")
-                        || editAccount3.getText().toString().trim().equals("")) {
+                if (editAccount.getText().toString().trim().equals("") || editAccount2.getText().toString().trim().equals("") || editAccount3.getText().toString().trim().equals("")) {
                     MaterialAlertDialogBuilder alertdialog = new MaterialAlertDialogBuilder(Create2AccountTeacherActivity.this);
                     alertdialog.setIcon(R.drawable.global);
                     alertdialog.setTitle(R.string.yetersiz_hesap_bilgileri);
                     alertdialog.setMessage(R.string.hesap_olu_turmak_i_in_isminizi_soy_isminizi_ve_bran_n_z_girmeniz_gerekmektedir);
-
                     alertdialog.setPositiveButton(R.string.tamam, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -102,10 +100,11 @@ public class Create2AccountTeacherActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             Uri uri = data.getData();
+            
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
                 ivAccount.setImageBitmap(bitmap);
-                final SharedPreferences preferences = getSharedPreferences("ImageURI", Context.MODE_PRIVATE);
+                SharedPreferences preferences = getSharedPreferences("ImageURI", Context.MODE_PRIVATE);
                 preferences.edit().putString("image_uri", uri.toString()).apply();
             }
 
@@ -119,11 +118,10 @@ public class Create2AccountTeacherActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_CODE) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            }
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {}
 
             else {
-                final MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Create2AccountTeacherActivity.this);
+                MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Create2AccountTeacherActivity.this);
                 alertDialogBuilder.setIcon(R.drawable.baseline_photo_library);
                 alertDialogBuilder.setTitle(R.string.eri_im_sorunu);
                 alertDialogBuilder.setMessage(R.string.l_tfen_medyaya_eri_im_izni_verin);
