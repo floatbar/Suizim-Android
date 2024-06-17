@@ -16,6 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class FirstQuestionActivity extends AppCompatActivity {
+    
     private TextInputEditText question1;
     private TextInputEditText question2;
     private TextInputEditText question3;
