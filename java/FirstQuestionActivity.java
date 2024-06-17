@@ -37,8 +37,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         fabQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (question1.getText().toString().equals("") || question2.getText().toString().equals("") ||
-                question3.getText().toString().equals("")) {
+                if (question1.getText().toString().equals("") || question2.getText().toString().equals("") || question3.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(FirstQuestionActivity.this);
                     alertDialogBuilder.setIcon(R.drawable.info);
                     alertDialogBuilder.setTitle(R.string.yetersiz_bilgiler);
