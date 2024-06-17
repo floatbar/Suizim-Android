@@ -22,7 +22,7 @@ public class UDPClient {
 
     private final Activity activity;
 
-    public UDPClient(final Activity activity) {
+    public UDPClient(Activity activity) {
         this.activity = activity;
     }
 
