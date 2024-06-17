@@ -95,6 +95,7 @@ public class Reply4Staff4Activity extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         String key2 = reference.child("Users").child("Teacher").child(partialPersonReplied).child("full_name")
                                                 .child("messages").child("coming").push().getKey();
+                                        
                                         reference.child("Users").child("Teacher").child(partialPersonReplied).child("full_name")
                                                 .child("messages").child("coming").child(key2).setValue(student_name2 + " " + student_surname2 + " - " + "Personel: " + edi14.getText().toString() + " ~ " + partialPersonReplied + " kişisine verilen cevap")
                                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
