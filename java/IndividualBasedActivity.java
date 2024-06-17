@@ -22,6 +22,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class IndividualBasedActivity extends AppCompatActivity {
+    
     private Toolbar tbar;
     private ListView lv;
 
