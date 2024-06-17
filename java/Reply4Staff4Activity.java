@@ -104,7 +104,6 @@ public class Reply4Staff4Activity extends AppCompatActivity {
                                                             try {
                                                                 pBar13.setVisibility(View.GONE);
                                                                 edi14.setText("");
-
                                                                 Snackbar.make(view, getString(R.string.mesaj_ba_ar_l_bir_ekilde_g_nderildi2), Snackbar.LENGTH_SHORT)
                                                                         .setAction(getString(R.string.tamam), new View.OnClickListener() {
                                                                             @Override
