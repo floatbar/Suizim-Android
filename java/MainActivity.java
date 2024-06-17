@@ -101,9 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                if (editRegister2.getText().toString().equals(getString(R.string.yusuf_kalkavan_anadolu_lisesi3)) &&
-                        editRegister.getText().toString().equals(getString(R.string.personel2))) {
-
+                if (editRegister2.getText().toString().equals(getString(R.string.yusuf_kalkavan_anadolu_lisesi3)) && editRegister.getText().toString().equals(getString(R.string.personel2))) {
                     SharedPreferences preferences = getSharedPreferences("Position", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString("position", editRegister.getText().toString());
@@ -136,9 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                if (editRegister2.getText().toString().equals(getString(R.string.yusuf_kalkavan_anadolu_lisesi4)) &&
-                        editRegister.getText().toString().equals(getString(R.string.retmen3))) {
-
+                if (editRegister2.getText().toString().equals(getString(R.string.yusuf_kalkavan_anadolu_lisesi4)) && editRegister.getText().toString().equals(getString(R.string.retmen3))) {
                     SharedPreferences preferences = getSharedPreferences("Position", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString("position", editRegister.getText().toString());
@@ -171,9 +167,7 @@ public class MainActivity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                if (editRegister2.getText().toString().equals(getString(R.string.yusuf_kalkavan_anadolu_lisesi7)) &&
-                        editRegister.getText().toString().equals(getString(R.string.renci6))) {
-
+                if (editRegister2.getText().toString().equals(getString(R.string.yusuf_kalkavan_anadolu_lisesi7)) && editRegister.getText().toString().equals(getString(R.string.renci6))) {
                     SharedPreferences preferences = getSharedPreferences("Position", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString("position", editRegister.getText().toString());
