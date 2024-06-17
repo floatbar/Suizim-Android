@@ -35,7 +35,6 @@ public class DeleteAccountFragment extends Fragment {
                 alertDialogBuilder.setIcon(R.drawable.delete);
                 alertDialogBuilder.setTitle(R.string.hesap_silme_lemi);
                 alertDialogBuilder.setMessage(R.string.hesab_n_z_silmek_istedi_inizden_emin_misiniz);
-
                 alertDialogBuilder.setPositiveButton(R.string.evet, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
