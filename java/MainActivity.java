@@ -193,7 +193,6 @@ public class MainActivity extends AppCompatActivity {
                             Intent intent = new Intent(MainActivity.this, Create1AccountActivity.class);
                             intent.putExtra("student", editRegister.getText().toString());
                             startActivity(intent);
-
                         }
                     });
 
