@@ -99,8 +99,7 @@ public class Login3AdminActivity extends AppCompatActivity {
                                                 Intent intent = new Intent(Login3AdminActivity.this, FrontendActivity1.class);
                                                 startActivity(intent);
 
-                                                SharedPreferences sharedPreferences = getSharedPreferences("StaffAccount",
-                                                        Context.MODE_PRIVATE);
+                                                SharedPreferences sharedPreferences = getSharedPreferences("StaffAccount", Context.MODE_PRIVATE);
                                                 SharedPreferences.Editor editor = sharedPreferences.edit();
                                                 editor.putString("staff_name", editName.getText().toString());
                                                 editor.putString("staff_surname", editSurname.getText().toString());
