@@ -41,7 +41,6 @@ public class FirstQuestionActivity extends AppCompatActivity {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(FirstQuestionActivity.this);
                     alertDialogBuilder.setIcon(R.drawable.info);
                     alertDialogBuilder.setTitle(R.string.yetersiz_bilgiler);
-
                     alertDialogBuilder.setMessage(R.string.hesaplama_yapabilmek_i_in_t_m_sorular_cevaplay_n_z);
                     alertDialogBuilder.setPositiveButton(R.string.tamam, new DialogInterface.OnClickListener() {
                         @Override
