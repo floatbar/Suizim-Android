@@ -51,7 +51,8 @@ public class LoginActivity extends AppCompatActivity {
         fabLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (editName.getText().toString().trim().equals("") || editSurname.getText().toString().trim().equals("") || editPassword.getText().toString().equals("")) {
+                if (editName.getText().toString().trim().equals("") || editSurname.getText().toString().trim().equals("")
+                        || editPassword.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(LoginActivity.this);
                     alertDialogBuilder.setTitle(R.string.yetersiz_hesap_bilgileri4);
                     alertDialogBuilder.setIcon(R.drawable.account_circle);
@@ -92,27 +93,37 @@ public class LoginActivity extends AppCompatActivity {
                                                     editor.putString("studentPassword", editPassword.getText().toString());
                                                     editor.apply();
                                                 }
+
+                                                else {
+                                                    progressBar.setVisibility(View.GONE);
+
+                                                    Intent intent = new Intent(LoginActivity.this, FrontendActivity1.class);
+                                                    startActivity(intent);
+
+                                                    SharedPreferences sharedPreferences = getSharedPreferences("StudentPassword2",
+                                                            Context.MODE_PRIVATE);
+                                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                                    editor.putString("student_name", editName.getText().toString());
+                                                    editor.putString("student_surname", editSurname.getText().toString());
+                                                    editor.putString("studentPassword", editPassword.getText().toString());
+                                                    editor.apply();
+
+                                                    SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
+                                                    SharedPreferences.Editor preferencesEditor = preferences.edit();
+                                                    preferencesEditor.putBoolean("isLoggedIn", true);
+                                                    preferencesEditor.apply();
+                                                }
                                             }
 
                                             @Override
                                             public void onFailure(Call<StudentsResponse> call, Throwable t) {
                                                 progressBar.setVisibility(View.GONE);
-
-                                                Intent intent = new Intent(LoginActivity.this, FrontendActivity1.class);
-                                                startActivity(intent);
-
-                                                SharedPreferences sharedPreferences = getSharedPreferences("StudentPassword2",
-                                                        Context.MODE_PRIVATE);
-                                                SharedPreferences.Editor editor = sharedPreferences.edit();
-                                                editor.putString("student_name", editName.getText().toString());
-                                                editor.putString("student_surname", editSurname.getText().toString());
-                                                editor.putString("studentPassword", editPassword.getText().toString());
-                                                editor.apply();
-
-                                                SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
-                                                SharedPreferences.Editor preferencesEditor = preferences.edit();
-                                                preferencesEditor.putBoolean("isLoggedIn", true);
-                                                preferencesEditor.apply();
+                                                Snackbar.make(view, getString(R.string.hesap_bilgileri_al_n_rken_bir_hata_olu_tu2), Snackbar.LENGTH_SHORT)
+                                                        .setAction(getString(R.string.tamam), new View.OnClickListener() {
+                                                            @Override
+                                                            public void onClick(View view) {
+                                                            }
+                                                        }).show();
                                             }
                                         });
                             }
