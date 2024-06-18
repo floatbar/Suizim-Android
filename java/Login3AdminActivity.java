@@ -50,8 +50,7 @@ public class Login3AdminActivity extends AppCompatActivity {
         fabLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (editName.getText().toString().trim().equals("") || editSurname.getText().toString().trim().equals("")
-                        || editPassword.getText().toString().equals("")) {
+                if (editName.getText().toString().trim().equals("") || editSurname.getText().toString().trim().equals("") || editPassword.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Login3AdminActivity.this);
                     alertDialogBuilder.setTitle(R.string.yetersiz_hesap_bilgileri3);
                     alertDialogBuilder.setIcon(R.drawable.account_circle);
