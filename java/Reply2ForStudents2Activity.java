@@ -25,6 +25,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Reply2ForStudents2Activity extends AppCompatActivity {
+    
     private ProgressBar pBar12;
     private FloatingActionButton fabSend5;
     private TextInputEditText edi9, edi10, edi11;
