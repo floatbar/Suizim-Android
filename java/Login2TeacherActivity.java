@@ -90,27 +90,37 @@ public class Login2TeacherActivity extends AppCompatActivity {
                                                     editor.putString("teacher_surname", editSurname.getText().toString());
                                                     editor.apply();
                                                 }
+
+                                                else {
+                                                    progressBar.setVisibility(View.GONE);
+
+                                                    Intent intent = new Intent(Login2TeacherActivity.this, FrontendActivity1.class);
+                                                    startActivity(intent);
+
+                                                    SharedPreferences sharedPreferences = getSharedPreferences("TeacherPassword2",
+                                                            Context.MODE_PRIVATE);
+                                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                                    editor.putString("teacher_password", editPassword.getText().toString());
+                                                    editor.putString("teacher_name", editName.getText().toString());
+                                                    editor.putString("teacher_surname", editSurname.getText().toString());
+                                                    editor.apply();
+
+                                                    SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
+                                                    SharedPreferences.Editor preferencesEditor = preferences.edit();
+                                                    preferencesEditor.putBoolean("isLoggedIn", true);
+                                                    preferencesEditor.apply();
+                                                }
                                             }
 
                                             @Override
                                             public void onFailure(Call<TeachersResponse> call, Throwable t) {
                                                 progressBar.setVisibility(View.GONE);
-
-                                                Intent intent = new Intent(Login2TeacherActivity.this, FrontendActivity1.class);
-                                                startActivity(intent);
-
-                                                SharedPreferences sharedPreferences = getSharedPreferences("TeacherPassword2",
-                                                        Context.MODE_PRIVATE);
-                                                SharedPreferences.Editor editor = sharedPreferences.edit();
-                                                editor.putString("teacher_password", editPassword.getText().toString());
-                                                editor.putString("teacher_name", editName.getText().toString());
-                                                editor.putString("teacher_surname", editSurname.getText().toString());
-                                                editor.apply();
-
-                                                SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
-                                                SharedPreferences.Editor preferencesEditor = preferences.edit();
-                                                preferencesEditor.putBoolean("isLoggedIn", true);
-                                                preferencesEditor.apply();
+                                                Snackbar.make(view, getString(R.string.hesap_bilgileri_al_n_rken_bir_hata_olu_tu2), Snackbar.LENGTH_SHORT)
+                                                        .setAction(getString(R.string.tamam), new View.OnClickListener() {
+                                                            @Override
+                                                            public void onClick(View view) {
+                                                            }
+                                                        }).show();
                                             }
                                         });
                             }
