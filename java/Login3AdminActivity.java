@@ -50,7 +50,8 @@ public class Login3AdminActivity extends AppCompatActivity {
         fabLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (editName.getText().toString().trim().equals("") || editSurname.getText().toString().trim().equals("") || editPassword.getText().toString().equals("")) {
+                if (editName.getText().toString().trim().equals("") || editSurname.getText().toString().trim().equals("")
+                        || editPassword.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Login3AdminActivity.this);
                     alertDialogBuilder.setTitle(R.string.yetersiz_hesap_bilgileri3);
                     alertDialogBuilder.setIcon(R.drawable.account_circle);
@@ -90,26 +91,37 @@ public class Login3AdminActivity extends AppCompatActivity {
                                                     editor.putString("staff_password", editPassword.getText().toString());
                                                     editor.apply();
                                                 }
+                                                
+                                                else {
+                                                    progressBar.setVisibility(View.GONE);
+
+                                                    Intent intent = new Intent(Login3AdminActivity.this, FrontendActivity1.class);
+                                                    startActivity(intent);
+
+                                                    SharedPreferences sharedPreferences = getSharedPreferences("StaffAccount",
+                                                            Context.MODE_PRIVATE);
+                                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                                    editor.putString("staff_name", editName.getText().toString());
+                                                    editor.putString("staff_surname", editSurname.getText().toString());
+                                                    editor.putString("staff_password", editPassword.getText().toString());
+                                                    editor.apply();
+
+                                                    SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
+                                                    SharedPreferences.Editor preferencesEditor = preferences.edit();
+                                                    preferencesEditor.putBoolean("isLoggedIn", true);
+                                                    preferencesEditor.apply();
+                                                }
                                             }
 
                                             @Override
                                             public void onFailure(Call<StaffResponse> call, Throwable t) {
                                                 progressBar.setVisibility(View.GONE);
-
-                                                Intent intent = new Intent(Login3AdminActivity.this, FrontendActivity1.class);
-                                                startActivity(intent);
-
-                                                SharedPreferences sharedPreferences = getSharedPreferences("StaffAccount", Context.MODE_PRIVATE);
-                                                SharedPreferences.Editor editor = sharedPreferences.edit();
-                                                editor.putString("staff_name", editName.getText().toString());
-                                                editor.putString("staff_surname", editSurname.getText().toString());
-                                                editor.putString("staff_password", editPassword.getText().toString());
-                                                editor.apply();
-
-                                                SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
-                                                SharedPreferences.Editor preferencesEditor = preferences.edit();
-                                                preferencesEditor.putBoolean("isLoggedIn", true);
-                                                preferencesEditor.apply();
+                                                Snackbar.make(view, getString(R.string.hesap_bilgileri_al_n_rken_bir_hata_olu_tu2), Snackbar.LENGTH_SHORT)
+                                                        .setAction(getString(R.string.tamam), new View.OnClickListener() {
+                                                            @Override
+                                                            public void onClick(View view) {
+                                                            }
+                                                        }).show();
                                             }
                                         });
                             }
