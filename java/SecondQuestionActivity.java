@@ -31,7 +31,7 @@ public class SecondQuestionActivity extends AppCompatActivity {
         NavigationBarColorChanger.changeNavigationBarColor(this);
         LightModeManager.setLightMode();
 
-        question1 = findViewById(R.id.soru1)
+        question1 = findViewById(R.id.soru1);
         question2 = findViewById(R.id.soru2);
         question3 = findViewById(R.id.soru3);
 
@@ -39,8 +39,7 @@ public class SecondQuestionActivity extends AppCompatActivity {
         fabQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (question1.getText().toString().equals("") || question2.getText().toString().equals("") ||
-                        question3.getText().toString().equals("")) {
+                if (question1.getText().toString().equals("") || question2.getText().toString().equals("") || question3.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(SecondQuestionActivity.this);
                     alertDialogBuilder.setIcon(R.drawable.info);
                     alertDialogBuilder.setTitle(R.string.yetersiz_bilgiler12313);
