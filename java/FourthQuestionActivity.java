@@ -289,7 +289,6 @@ public class FourthQuestionActivity extends AppCompatActivity {
                                                 }
 
                                                 else if (washingmethod.equals(getString(R.string.elde_y_kama)) && dishmethod.equals(getString(R.string.elde_y_kama))) {
-
                                                     result = handWashingValue * familyamount * washingamount + handDishAmount * familyamount * dishamount
                                                             + showerAmount * showeramount + dishAmount * dishamount + washingAmount * washingamount
                                                             + kitchenamount * kitchenAmount + Double.parseDouble(question1.getText().toString()) * vehicleAmount + Double.parseDouble(question2.getText().toString()) * kitchenOutcome
@@ -370,7 +369,6 @@ public class FourthQuestionActivity extends AppCompatActivity {
                     }
 
                     else if (position.equals(getString(R.string.retmen))) {
-
                         // Start
 
                         SharedPreferences sharedPreferences1 = getSharedPreferences("GeneralQuestion",
