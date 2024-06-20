@@ -47,8 +47,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
         fabMessage2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-            }
+            public void onClick(View view) {}
         });
     }
 }
