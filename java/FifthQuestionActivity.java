@@ -16,6 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class FifthQuestionActivity extends AppCompatActivity {
+    
     private TextInputEditText question1;
     private TextInputEditText question2;
     private TextInputEditText question3;
@@ -36,8 +37,7 @@ public class FifthQuestionActivity extends AppCompatActivity {
         fabQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (question1.getText().toString().equals("") || question2.getText().toString().equals("") ||
-                        question3.getText().toString().equals("")) {
+                if (question1.getText().toString().equals("") || question2.getText().toString().equals("") || question3.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(FifthQuestionActivity.this);
                     alertDialogBuilder.setIcon(R.drawable.info);
                     alertDialogBuilder.setTitle(R.string.yetersiz_bilgiler);
