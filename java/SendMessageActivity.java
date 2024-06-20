@@ -1,3 +1,5 @@
+// UDP server will be used soon in this code.
+
 package wafoot.becoming.wafoot;
 
 import android.os.Bundle;
