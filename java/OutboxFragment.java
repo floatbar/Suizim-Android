@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class OutboxFragment extends Fragment {
+    
     private RecyclerView rvOut;
 
     private ArrayList<String> arrayList1 = new ArrayList<>();
