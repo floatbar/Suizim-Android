@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Reply3Staff3Fragment extends Fragment {
+    
     private HashSet<String> hashSet;
 
     private ArrayList<String> arrayList = new ArrayList<>();
