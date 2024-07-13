@@ -12,21 +12,18 @@ function generateToken(secret, userName, userSurname, expirationTimeSeconds) {
     encryptedData += cipher.final("hex");
 
     const token = `${iv.toString("hex")}.${encryptedData}`;
-
     return token;
 }
 
 function verifyToken(secret, userName, userSurname, token) {
     const [iv, encryptedData] = token.split(".");
 
-    const decipher = crypto.createDecipheriv("aes-256-cbc", secret, Buffer.from(iv, "hex"), 
-    { authTagLength: 12 });
+    const decipher = crypto.createDecipheriv("aes-256-cbc", secret, Buffer.from(iv, "hex"), { authTagLength: 12 });
 
     let decryptedData = decipher.update(encryptedData, "hex", "utf-8");
     decryptedData += decipher.final("utf-8");
 
     const [nameOfUser, surnameOfUser, stringValueOfExpirationTime] = decryptedData.split("-");
-
     return nameOfUser === userName && surnameOfUser === userSurname && parseInt(stringValueOfExpirationTime) > Math.floor(Date.now() / 1000);
 }
 
