@@ -87,9 +87,9 @@
     <string name="litre_g_n4">" litre/gün"</string>
     <string name="suizim_uygulamas_na_ait_yaz_l_m_bilgileri">Suizim Uygulamasına Ait Yazılım Bilgileri:</string>
     <string name="_1_uygulamay_geli_tirmek_in_kullan_lan_programlama_dilleri">1. Uygulamayı Geliştirmek İçin Kullanılan Programlama Dilleri:</string>
-    <string name="suizim_uygulamas_frontend_tasar_m_taraf_nda_java_backend_sunucu_taraf_nda_ise_php_laravel_ve_javascript_node_js_olmak_zere_toplamda_3_tane_programlama_diliyle_geli_tirilmi_tir">Suizim uygulaması; frontend (tasarım) tarafında Java, backend (sunucu) tarafında ise PHP (Laravel) ve JavaScript (Node.js) olmak üzere toplamda 3 tane programlama diliyle geliştirilmiştir.</string>
+    <string name="suizim_uygulamas_frontend_tasar_m_taraf_nda_java_backend_sunucu_taraf_nda_ise_php_laravel_ve_javascript_node_js_olmak_zere_toplamda_3_tane_programlama_diliyle_geli_tirilmi_tir">Suizim uygulaması; frontend (tasarım) tarafında Java, backend (sunucu) tarafında ise PHP (Laravel), JavaScript (Node.js) ve C olmak üzere toplamda 3 tane programlama diliyle geliştirilmiştir.</string>
     <string name="_2_uygulamay_geli_tirmek_in_yaz_lan_kod_miktar">2. Uygulamayı Geliştirmek İçin Yazılan Kod Miktarı:</string>
-    <string name="uygulaman_n_geli_tirilmesi_i_in_backend_ve_frontend_taraflar_dahil_olmak_zere_toplamda_yakla_k_15_bin_sat_r_kod_yaz_lm_t_r">Uygulamanın geliştirilmesi için backend ve frontend tarafları dahil olmak üzere toplamda yaklaşık 15 bin satır kod yazılmıştır.</string>
+    <string name="uygulaman_n_geli_tirilmesi_i_in_backend_ve_frontend_taraflar_dahil_olmak_zere_toplamda_yakla_k_15_bin_sat_r_kod_yaz_lm_t_r">Uygulamanın geliştirilmesi için backend ve frontend tarafları dahil olmak üzere toplamda yaklaşık 20 bin satır kod yazılmıştır.</string>
     <string name="_3_uygulama_sunucular">3. Uygulama Sunucuları:</string>
     <string name="uygulamaya_ait_iki_sunucu_makinelerinden_biri_lokasyon_olarak_amerika_birle_ik_devletleri_ndeki_veri_merkezlerinde_bulunmaktad_r_di_er_sunucu_ise_t_rkiye_bursa_daki_veri_merkezlerinde_bulunmaktad_r">Uygulamaya ait iki sunucu makinelerinden biri, lokasyon olarak Amerika Birleşik Devletleri\'ndeki veri merkezlerinde bulunmaktadır; diğer sunucu ise Türkiye Bursa\'daki veri merkezlerinde bulunmaktadır.</string>
     <string name="_4_verilerin_saklanmas">4. Verilerin Saklanması:</string>
