@@ -46,6 +46,7 @@ public class CreateAccountAdminActivity extends AppCompatActivity {
         editAccount2 = findViewById(R.id.te2);
         editAccount = findViewById(R.id.te1);
         editAccount3 = findViewById(R.id.te3);
+        
         editAccount.setCursorVisible(false);
         editAccount.setFocusable(false);
         editAccount.setFocusableInTouchMode(false);
