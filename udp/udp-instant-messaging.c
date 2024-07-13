@@ -5,7 +5,7 @@
 // Suizim's UDP server...
 // Consider verifying tokens or user accounts before any message operation.
 
-int main() {
+int main(void) {
     WSADATA wsa;
     SOCKET sockfd;
     
