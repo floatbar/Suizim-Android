@@ -102,8 +102,7 @@ public class Password2TeacherActivity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                else if (editPassword2.getText().toString().equals(editConfirm2.getText().toString()) && editPassword2.getText().toString()
-                        .length() < 8) {
+                else if (editPassword2.getText().toString().equals(editConfirm2.getText().toString()) && editPassword2.getText().toString().length() < 8) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Password2TeacherActivity.this);
                     alertDialogBuilder.setIcon(R.drawable.baseline_error);
                     alertDialogBuilder.setTitle(R.string.ifre_basamak_say_s_sorunu);
@@ -117,8 +116,7 @@ public class Password2TeacherActivity extends AppCompatActivity {
                     alertDialogBuilder.create().show();
                 }
 
-                else if (editPassword2.getText().toString().equals(editConfirm2.getText().toString()) &&
-                        editPassword2.getText().toString().length() >= 8) {
+                else if (editPassword2.getText().toString().equals(editConfirm2.getText().toString()) && editPassword2.getText().toString().length() >= 8) {
                     progressBar.setVisibility(View.VISIBLE);
 
                     String teacher_branch = getIntent().getStringExtra("teacher_branch");
