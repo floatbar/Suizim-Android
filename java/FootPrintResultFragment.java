@@ -18,6 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class FootPrintResultFragment extends Fragment {
+    
     private TextInputEditText edit15, edit16;
     private FloatingActionButton fab3;
 
