@@ -2,21 +2,6 @@
 
 const crypto = require("crypto");
 
-function generate2FAPassword(secret, password) { 
-    return crypto.createHmac("sha256", secret).update(password).digest("hex");
-}
-
-function verify2FAPassword(secret, password, twoFAPassword) {
-    return twoFAPassword === crypto.createHmac("sha256", secret).update(password).digest("hex");
-}
-
-module.exports = {
-    generate2FAPassword,
-    verify2FAPassword
-};
-
-const crypto = require("crypto");
-
 function generateToken(secret, userName, userSurname, expirationTimeSeconds) {
     const expirationTime = Math.floor(Date.now() / 1000) + expirationTimeSeconds;
     const iv = crypto.randomBytes(16);
