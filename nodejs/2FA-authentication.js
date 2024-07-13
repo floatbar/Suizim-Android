@@ -1,4 +1,4 @@
-// The file, in which APIs are written, (index.js) has not been included in the repository due to security considerations.
+// The file, in which secure APIs are written, (main.js) has not been included in the repository due to security considerations.
 
 const crypto = require("crypto");
 
