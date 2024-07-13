@@ -45,4 +45,4 @@ function verifyToken(secret, userName, userSurname, token) {
     return nameOfUser === userName && surnameOfUser === userSurname && parseInt(stringValueOfExpirationTime) > Math.floor(Date.now() / 1000);
 }
 
-module.exports = { generateToken,verifyToken };
+module.exports = { generateToken, verifyToken };
