@@ -10,7 +10,4 @@ function verify2FAPassword(secret, password, twoFAPassword) {
     return twoFAPassword === crypto.createHmac("sha256", secret).update(password).digest("hex");
 }
 
-module.exports = {
-    generate2FAPassword,
-    verify2FAPassword
-};
+module.exports = { generate2FAPassword, verify2FAPassword };
