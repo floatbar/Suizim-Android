@@ -79,8 +79,7 @@ public class Verification3AdminActivity extends AppCompatActivity {
         fabLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (editName.getText().toString().equals("") || editSurname.getText().toString().equals("")
-                        || editPassword.getText().toString().equals("")) {
+                if (editName.getText().toString().equals("") || editSurname.getText().toString().equals("") || editPassword.getText().toString().equals("")) {
                     MaterialAlertDialogBuilder alertDialogBuilder = new MaterialAlertDialogBuilder(Verification3AdminActivity.this);
                     alertDialogBuilder.setTitle(R.string.yetersiz_hesap_bilgileri131312);
                     alertDialogBuilder.setIcon(R.drawable.account_circle);
