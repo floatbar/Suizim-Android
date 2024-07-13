@@ -35,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
         editRegister2.setMovementMethod(null);
         editRegister.setMovementMethod(null);
+        
         editRegister.setCursorVisible(false);
         editRegister.setFocusable(false);
         editRegister.setFocusableInTouchMode(false);
+        
         editRegister2.setCursorVisible(false);
         editRegister2.setFocusable(false);
         editRegister2.setFocusableInTouchMode(false);
