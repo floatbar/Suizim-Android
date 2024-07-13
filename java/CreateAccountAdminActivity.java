@@ -50,7 +50,6 @@ public class CreateAccountAdminActivity extends AppCompatActivity {
         editAccount.setCursorVisible(false);
         editAccount.setFocusable(false);
         editAccount.setFocusableInTouchMode(false);
-
         editAccount.setText(getString(R.string.personel));
 
         ivAccount.setOnClickListener(new View.OnClickListener() {
