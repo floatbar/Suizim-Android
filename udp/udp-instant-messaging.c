@@ -9,7 +9,7 @@ int main(void) {
     WSADATA wsa;
     SOCKET sockfd;
     
-    char[1024] buffer;
+    char[4096] buffer;
     struct sockaddr_in servaddr, clientaddr;
     
     int clientaddrlen = sizeof(clientaddr);
@@ -37,12 +37,12 @@ int main(void) {
     
     int n;
     
-    n = recvfrom(sockfd, buffer, 1024, 0, (struct sockaddr *)&clientaddr, &clientaddrlen);
+    n = recvfrom(sockfd, buffer, 4096, 0, (struct sockaddr *)&clientaddr, &clientaddrlen);
     buffer[n] = '\0';
     printf("Message retrieved from Suizim or any other client: %s\n", buffer);
     
     sendto(sockfd, (const char *)buffer, strlen(buffer), MSG_CONFIRM, (const struct sockaddr *) &cliaddr, len);
-    printf("Message has been sent to client without any issue.\n");
+    printf("The message has been sent to client without any issue.\n");
     
     WSACleanup();
     closesocket(sockfd);
