@@ -21,7 +21,6 @@ public class Student {
     @Expose
     private String water_foot_print;
 
-
     public void setStudent_name(String student_name) {
         this.student_name = student_name;
     }
