@@ -24,8 +24,11 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class CreateAccountAdminActivity extends AppCompatActivity {
+    
     private ShapeableImageView ivAccount;
+    
     private FloatingActionButton fabAccount3;
+    
     private TextInputEditText editAccount2;
     private TextInputEditText editAccount3;
     private TextInputEditText editAccount;
@@ -42,7 +45,9 @@ public class CreateAccountAdminActivity extends AppCompatActivity {
         LightModeManager.setLightMode();
 
         ivAccount = findViewById(R.id.imageView6);
+        
         fabAccount3 = findViewById(R.id.fab);
+        
         editAccount2 = findViewById(R.id.te2);
         editAccount = findViewById(R.id.te1);
         editAccount3 = findViewById(R.id.te3);
