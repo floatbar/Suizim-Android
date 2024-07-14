@@ -68,8 +68,7 @@ public class CreateAccountAdminActivity extends AppCompatActivity {
         fabAccount3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!editAccount2.getText().toString().trim().equals("") &&
-                        !editAccount3.getText().toString().trim().equals("")) {
+                if (!editAccount2.getText().toString().trim().equals("") && !editAccount3.getText().toString().trim().equals("")) {
                     requestPermissions();
                 }
 
@@ -161,8 +160,7 @@ public class CreateAccountAdminActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(CreateAccountAdminActivity.this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CODE);
             }
 
-            else if (ActivityCompat.checkSelfPermission(CreateAccountAdminActivity.this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED &&
-                    ActivityCompat.checkSelfPermission(CreateAccountAdminActivity.this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            else if (ActivityCompat.checkSelfPermission(CreateAccountAdminActivity.this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(CreateAccountAdminActivity.this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(CreateAccountAdminActivity.this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CODE);
                 ActivityCompat.requestPermissions(CreateAccountAdminActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE);
             }
