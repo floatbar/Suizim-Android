@@ -3,7 +3,7 @@
 #include <winsock2.h>
 
 // Suizim's UDP server...
-// Consider verifying tokens or user accounts before any message operation.
+// Consider verifying tokens and/or user accounts before any message operation.
 
 int main(void) {
     WSADATA wsa;
