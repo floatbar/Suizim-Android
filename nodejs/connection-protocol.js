@@ -1,6 +1,6 @@
 // The file, in which secure APIs are written, (main.js) has not been included in the repository due to security considerations.
 
-const net = require("net"); // TCP server creator
+const net = require("net"); // TCP server creator for handling Suizim's or any other client's connections
 require("dotenv").config();
 
 const server = net.createServer((socket) => {});
