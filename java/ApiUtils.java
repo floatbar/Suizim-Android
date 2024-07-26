@@ -10,6 +10,6 @@ public class ApiUtils {
     }
 
     public static StudentsInterface getNodejsStudentsInterface() {
-        return RetrofitClient.getClient(SECOND_BASE_URL).create(StudentsInterface.class); // I will not share this app's backend codes :-)
+        return RetrofitClient.getClient(SECOND_BASE_URL).create(StudentsInterface.class); // I will not share all of this app's backend codes :-)
     }
 }
