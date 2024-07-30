@@ -41,7 +41,7 @@ int main(void) {
     buffer[n] = '\0';
     printf("Message retrieved from Suizim or any other client: %s\n", buffer);
     
-    sendto(sockfd, (const char *)buffer, strlen(buffer), MSG_CONFIRM, (const struct sockaddr *) &cliaddr, len);
+    sendto(sockfd, (const char *)buffer, strlen(buffer), MSG_CONFIRM, (const struct sockaddr *)&clientaddr, len);
     printf("The message has been sent to client without any issue.\n");
     
     WSACleanup();
