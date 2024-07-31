@@ -60,12 +60,9 @@ public class ClassBasedActivity extends AppCompatActivity {
         SharedPreferences preferences1 = getSharedPreferences("StudentPassword2", Context.MODE_PRIVATE);
         SharedPreferences preferences3 = getSharedPreferences("StudentAccount", Context.MODE_PRIVATE);
 
-        String student_name = preferences3.getString("student_name", preferences1.
-                getString("student_name", ""));
-        String student_surname = preferences3.getString("student_surname", preferences1.
-                getString("student_surname", ""));
-        String student_password = preferences.getString("student_password", preferences1.
-                getString("studentPassword", ""));
+        String student_name = preferences3.getString("student_name", preferences1.getString("student_name", ""));
+        String student_surname = preferences3.getString("student_surname", preferences1.getString("student_surname", ""));
+        String student_password = preferences.getString("student_password", preferences1.getString("studentPassword", ""));
 
         progressBar.setVisibility(View.VISIBLE);
 
@@ -89,12 +86,9 @@ public class ClassBasedActivity extends AppCompatActivity {
                                 }
 
                                 try {
-
                                     arrayList.add(stringList.get(0) + getString(R.string.s_n_f_n_n_g_nl_k_su_ayak_izi_ortalamas)
                                             + value/studentList.size() + getString(R.string.litre_g_n));
-                                }
-
-                                catch (Exception e) {
+                                } catch (Exception e) {
                                 }
 
                                 arrayAdapter = new ArrayAdapter<>(ClassBasedActivity.this,
@@ -132,28 +126,20 @@ public class ClassBasedActivity extends AppCompatActivity {
             public boolean onQueryTextSubmit(String query) {
                 try {
                     arrayAdapter.getFilter().filter(query);
+                } catch (Exception e) {
                 }
-
-                catch (Exception e) {
-                }
-
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-
                 try {
                     arrayAdapter.getFilter().filter(newText);
+                } catch (Exception e) {
                 }
-
-                catch (Exception e) {
-                }
-
                 return false;
             }
         });
-
         return super.onCreateOptionsMenu(menu);
     }
 }
