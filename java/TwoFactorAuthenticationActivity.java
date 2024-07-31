@@ -34,34 +34,25 @@ public class TwoFactorAuthenticationActivity extends AppCompatActivity {
         SharedPreferences preferences1 = getSharedPreferences("StudentPassword2", Context.MODE_PRIVATE);
         SharedPreferences preferences3 = getSharedPreferences("StudentAccount", Context.MODE_PRIVATE);
 
-        String student_name = preferences3.getString("student_name", preferences1.
-                getString("student_name", ""));
-        String student_surname = preferences3.getString("student_surname", preferences1.
-                getString("student_surname", ""));
-        String student_password = preferences10.getString("student_password", preferences1.
-                getString("studentPassword", ""));
+        String student_name = preferences3.getString("student_name", preferences1.getString("student_name", ""));
+        String student_surname = preferences3.getString("student_surname", preferences1.getString("student_surname", ""));
+        String student_password = preferences10.getString("student_password", preferences1.getString("studentPassword", ""));
 
         SharedPreferences preferences = getSharedPreferences("ResultTeacherInfo", Context.MODE_PRIVATE);
         SharedPreferences preferences11 = getSharedPreferences("TeacherPassword2", Context.MODE_PRIVATE);
         SharedPreferences preferences13 = getSharedPreferences("RegisterTeacher", Context.MODE_PRIVATE);
 
-        String student_name2 = preferences13.getString("teacher_name", preferences11.
-                getString("teacher_name", ""));
-        String student_surname2 = preferences13.getString("teacher_surname", preferences11.
-                getString("teacher_surname", ""));
-        String student_password2 = preferences.getString("teacher_password", preferences11.
-                getString("teacher_password", ""));
+        String student_name2 = preferences13.getString("teacher_name", preferences11.getString("teacher_name", ""));
+        String student_surname2 = preferences13.getString("teacher_surname", preferences11.getString("teacher_surname", ""));
+        String student_password2 = preferences.getString("teacher_password", preferences11.getString("teacher_password", ""));
 
         SharedPreferences preferences2 = getSharedPreferences("ResultStaffInfo", Context.MODE_PRIVATE);
         SharedPreferences preferences12 = getSharedPreferences("StaffAccount", Context.MODE_PRIVATE);
         SharedPreferences preferences14 = getSharedPreferences("RegisterStaff", Context.MODE_PRIVATE);
 
-        String student_name3 = preferences12.getString("staff_name", preferences14.
-                getString("staff_name", ""));
-        String student_surname3 = preferences12.getString("staff_surname", preferences14.
-                getString("staff_surname", ""));
-        String student_password3 = preferences2.getString("staff_password", preferences12.
-                getString("staff_password", ""));
+        String student_name3 = preferences12.getString("staff_name", preferences14.getString("staff_name", ""));
+        String student_surname3 = preferences12.getString("staff_surname", preferences14.getString("staff_surname", ""));
+        String student_password3 = preferences2.getString("staff_password", preferences12.getString("staff_password", ""));
 
         TextInputEditText te1 = findViewById(R.id.te1);
         TextInputEditText te2 = findViewById(R.id.te2);
@@ -87,23 +78,16 @@ public class TwoFactorAuthenticationActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {
                         }
                     });
-
                     alertDialogBuilder.create().show();
-                }
-
-                else {
+                } else {
                     progressBar.setVisibility(View.VISIBLE);
-
                     if (sharedPreferences.getString("position", "").equals(getString(R.string.renci))) {
-                        studentsInterface.verify2FAStudentPassword(student_name, student_surname,
-                                student_password, te1.getText().toString()).enqueue(new Callback<StudentsResponse>() {
+                        studentsInterface.verify2FAStudentPassword(student_name, student_surname, student_password, te1.getText().toString()).enqueue(new Callback<StudentsResponse>() {
                             @Override
                             public void onResponse(Call<StudentsResponse> call, Response<StudentsResponse> response) {
                                 if (response.isSuccessful()) {
                                     progressBar.setVisibility(View.GONE);
-
                                     startActivity(new Intent(TwoFactorAuthenticationActivity.this, FrontendActivity1.class));
-
                                     SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor preferencesEditor = preferences.edit();
                                     preferencesEditor.putBoolean("isLoggedIn", true);
@@ -125,15 +109,12 @@ public class TwoFactorAuthenticationActivity extends AppCompatActivity {
                     }
 
                     if (sharedPreferences.getString("position", "").equals(getString(R.string.retmen))) {
-                        teachersInterface.verify2FATeacherPassword(student_name2, student_surname2,
-                                student_password2, te1.getText().toString()).enqueue(new Callback<TeachersResponse>() {
+                        teachersInterface.verify2FATeacherPassword(student_name2, student_surname2, student_password2, te1.getText().toString()).enqueue(new Callback<TeachersResponse>() {
                             @Override
                             public void onResponse(Call<TeachersResponse> call, Response<TeachersResponse> response) {
                                 if (response.isSuccessful()) {
                                     progressBar.setVisibility(View.GONE);
-
                                     startActivity(new Intent(TwoFactorAuthenticationActivity.this, FrontendActivity1.class));
-
                                     SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor preferencesEditor = preferences.edit();
                                     preferencesEditor.putBoolean("isLoggedIn", true);
@@ -161,9 +142,7 @@ public class TwoFactorAuthenticationActivity extends AppCompatActivity {
                             public void onResponse(Call<StaffResponse> call, Response<StaffResponse> response) {
                                 if (response.isSuccessful()) {
                                     progressBar.setVisibility(View.GONE);
-
                                     startActivity(new Intent(TwoFactorAuthenticationActivity.this, FrontendActivity1.class));
-
                                     SharedPreferences preferences = getSharedPreferences("LoginState", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor preferencesEditor = preferences.edit();
                                     preferencesEditor.putBoolean("isLoggedIn", true);
