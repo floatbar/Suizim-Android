@@ -47,14 +47,10 @@ public class FirstQuestionActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {
                         }
                     });
-
                     alertDialogBuilder.create().show();
-                }
-
-                else {
+                } else {
                     Intent intent = new Intent(FirstQuestionActivity.this, SecondQuestionActivity.class);
                     startActivity(intent);
-
                     SharedPreferences sharedPreferences = getSharedPreferences("Question1", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("gender", question1.getText().toString());
@@ -78,7 +74,6 @@ public class FirstQuestionActivity extends AppCompatActivity {
                         return false;
                     }
                 });
-
                 popupMenu.show();
             }
         });
@@ -96,7 +91,6 @@ public class FirstQuestionActivity extends AppCompatActivity {
                         return false;
                     }
                 });
-
                 popupMenu.show();
             }
         });
@@ -114,7 +108,6 @@ public class FirstQuestionActivity extends AppCompatActivity {
                         return false;
                     }
                 });
-
                 popupMenu.show();
             }
         });
