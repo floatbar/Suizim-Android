@@ -61,10 +61,8 @@ public class SendFragment extends Fragment {
         SharedPreferences preferences1 = getContext().getSharedPreferences("StudentPassword2", Context.MODE_PRIVATE);
         SharedPreferences preferences3 = getContext().getSharedPreferences("StudentAccount", Context.MODE_PRIVATE);
 
-        String student_name = preferences3.getString("student_name", preferences1.
-                getString("student_name", ""));
-        String student_surname = preferences3.getString("student_surname", preferences1.
-                getString("student_surname", ""));
+        String student_name = preferences3.getString("student_name", preferences1.getString("student_name", ""));
+        String student_surname = preferences3.getString("student_surname", preferences1.getString("student_surname", ""));
 
         editSend3.setText(R.string.retmenler3232);
 
