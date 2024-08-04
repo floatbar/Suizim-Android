@@ -52,12 +52,9 @@ public class ChatRoomFragment extends Fragment {
                         if (menuItem.getItemId() == R.id.ykal) {
                             editChat1.setText(R.string.yusuf_kalkavan_anadolu_lisesi);
                         }
-
                         return false;
-
                     }
                 });
-
                 popupMenu.show();
             }
         });
@@ -75,15 +72,12 @@ public class ChatRoomFragment extends Fragment {
                         public void onClick(DialogInterface dialogInterface, int i) {
                         }
                     });
-
                     alertDialogBuilder.create().show();
-                }
-
-                else {
+                } else {
                     if (preferences.getString("position", "").equals(getString(R.string.renci))) {
                         startActivity(new Intent(getActivity(), Chat2AdminActivity.class));
                     }
-
+                    
                     if (preferences.getString("position", "").equals(getString(R.string.retmen))) {
                         startActivity(new Intent(getActivity(), Contact3Teacher3Activity.class));
                     }
@@ -94,7 +88,6 @@ public class ChatRoomFragment extends Fragment {
                 }
             }
         });
-
         return view;
     }
 }
