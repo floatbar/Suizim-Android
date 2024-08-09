@@ -6,8 +6,8 @@ function generateToken(secret, userName, userSurname, expirationTimeSeconds) {
     const expirationTime = Math.floor(Date.now() / 1000) + expirationTimeSeconds;
     const iv = crypto.randomBytes(16);
     const user = userName + "-" + userSurname + "-" + expirationTime.toString();
+    
     const cipher = crypto.createCipheriv("aes-256-cbc", secret, iv, { authTagLength: 12 });
-
     let encryptedData = cipher.update(user, "utf-8", "hex");
     encryptedData += cipher.final("hex");
 
@@ -19,7 +19,6 @@ function verifyToken(secret, userName, userSurname, token) {
     const [iv, encryptedData] = token.split(".");
 
     const decipher = crypto.createDecipheriv("aes-256-cbc", secret, Buffer.from(iv, "hex"), { authTagLength: 12 });
-
     let decryptedData = decipher.update(encryptedData, "hex", "utf-8");
     decryptedData += decipher.final("utf-8");
 
