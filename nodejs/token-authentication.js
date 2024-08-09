@@ -5,6 +5,7 @@ const crypto = require("crypto");
 function generateToken(secret, userName, userSurname, expirationTimeSeconds) {
     const expirationTime = Math.floor(Date.now() / 1000) + expirationTimeSeconds;
     const iv = crypto.randomBytes(16);
+    
     const user = userName + "-" + userSurname + "-" + expirationTime.toString();
     
     const cipher = crypto.createCipheriv("aes-256-cbc", secret, iv, { authTagLength: 12 });
