@@ -6,14 +6,12 @@ public class SessionManager {
 
     private boolean isLogged = false;
 
-    private SessionManager() {
-    }
+    private SessionManager() {}
 
     public static synchronized SessionManager getInstance() {
         if (instance == null) {
             instance = new SessionManager();
         }
-
         return instance;
     }
 
