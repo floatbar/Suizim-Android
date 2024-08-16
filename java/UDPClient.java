@@ -31,7 +31,7 @@ public class UDPClient {
             InetAddress ipAddress = InetAddress.getByName(activity.getString(R.string.udp_server_ip_address));
             int PORT = Integer.parseInt(activity.getString(R.string.udp_server_port));
 
-            String message = "Hello Universe!";
+            String message = "Hello, Universe!";
             byte[] sendData = message.getBytes();
 
             DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, ipAddress, PORT);
