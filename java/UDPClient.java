@@ -7,19 +7,17 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 /*
- * There is a better performance and a less delay with my custom JSON-formatted UDP protocol, which has been written in the C language.
- * This is one of the reasons why Suizim (also called WaFoot) utilizes UDP for instant messaging.
- * Do not forget to use TCP protocol instead of UDP in your projects if you really give importance to security rather than performance ;)
+ * There is better performance and less delays with my custom JSON-formatted protocol that operates over UDP, which has been written in the C language.
+ * This is one of the reasons why Suizim, also called WaFoot, utilizes UDP for instant messaging.
+ * Do not forget to use TCP protocol instead of UDP in your projects, if you really attach importance to security rather than performance ;)
 */
 
 // The UDP server is ready and running at the moment.
-// However, for the server's security, unfortunately, Suizim's UDP server isn't used only for now.
+// However, for some of the security reasons, unfortunately, Suizim's UDP server isn't used only for now.
 // Instead, Firebase is now being used for message operations.
-// Even so, do not worry at all! Soon, I will delete my Firebase database, and will replace Firebase with my UDP server for message operations within the app.
-// Do not forget that UDP (User Datagram Protocol) transfers data much faster than other protocols :-)
+// Even so, do not worry at all! Soon, Suizim will replace Firebase with its UDP server for message operations within the app.
 
 public class UDPClient {
-
     private final Activity activity;
 
     public UDPClient(Activity activity) {
@@ -47,7 +45,7 @@ public class UDPClient {
         }
 
         catch (Exception e) {
-            e.printStackTrace();
+            System.out.print(e);
         }
     }
 }
